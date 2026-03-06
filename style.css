@@ -1,0 +1,395 @@
+:root{
+--bg-color:#0f172a;
+--card-color:#1e293b;
+--accent-color:#38bdf8;
+--text-color:#ffffff;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+color:white;
+
+background: radial-gradient(circle at 30% 30%, #2a2f45 0%, transparent 40%),
+linear-gradient(135deg,#081229,#0f1b3d,#0b132b);
+}
+
+.hero-title{
+font-size:70px;
+font-weight:800;
+text-align:center;
+}
+
+.hero-title span{
+color:#ff6b3d;
+position:relative;
+z-index:2;
+}
+
+.hero-title span::before{
+content:"";
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+width:500px;
+height:200px;
+background:radial-gradient(circle,#ff6b3d55,transparent 70%);
+filter:blur(60px);
+z-index:-1;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#081229;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#fdfbfb;
+font-weight:800;
+transition:0.5s;
+background:rgba(10,20,40,0.7);
+backdrop-filter:blur(10px);
+}
+
+nav a:hover{
+color:#0077ff;
+}
+
+.logo-container{
+display:flex;
+align-items:center;
+gap:10px;
+text-decoration:none;
+}
+
+.logo-container h2{
+font-size:22px;
+font-weight:800;
+color:white;
+margin:0;
+}
+
+.logo{
+width:60px;
+height:auto;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#ff6b3d33,transparent 70%);
+filter:blur(120px);
+top:-200px;
+left:-200px;
+}
+
+.hero h1{
+font-size:72px;
+margin-bottom:20px;
+color:#ffffff;
+}
+
+.hero p{
+color:#d1d5db;
+}
+
+.hero button{
+margin-top:30px;
+padding:14px 35px;
+font-size:18px;
+background:#ffc83d;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#ffb700;
+transform:translateY(-2px);
+}
+
+button{
+background:#ff6b3d;
+border:none;
+padding:14px 28px;
+border-radius:10px;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff7f50;
+}
+
+section{
+padding:100px 20px;
+text-align:center;
+}
+
+.about{
+padding:120px 20px;
+text-align:center;
+max-width:900px;
+margin:auto;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:18px;
+line-height:1.6;
+color:#555;
+}
+
+@media (max-width:768px){
+
+.team-container{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+.team-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+margin-top:40px;
+}
+
+.member{
+background:rgb(255, 254, 254);
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.member:hover{
+transform:translateY(-10px);
+transition:0.3s;
+}
+
+.member img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.member h3{
+margin-top:10px;
+color:#213f69;
+}
+
+.member p{
+color:gray;
+}
+
+.socials{
+margin-top:10px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.socials a{
+font-size:22px;
+color:#333;
+transition:0.3s;
+}
+
+.socials a:hover{
+color:#0077b5;
+transform:scale(1.2);
+}
+
+.events{
+padding:80px 10%;
+text-align:center;
+}
+
+.events h2{
+font-size:50px;
+margin-bottom:40px;
+}
+
+.event-card{
+background:#f3f4f6;
+padding:40px;
+border-radius:20px;
+max-width:800px;
+margin:40px auto;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.event-card h3{
+font-size:28px;
+margin-bottom:15px;
+color:#213f69;
+}
+
+.event-card p{
+color:#1f2937;
+font-size:16px;
+}
+
+.join{
+padding:120px 20px;
+text-align:center;
+}
+
+.join h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.join p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+color:#d8d3d3;
+}
+
+.join-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.join-btn{
+padding:15px 40px;
+font-size:18px;
+background:#ffc83d;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.join-btn:hover{
+background:#ffb700;
+transform:translateY(-3px);
+}
+
+.discord-btn{
+padding:15px 40px;
+font-size:18px;
+background:#5865F2;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.discord-btn:hover{
+transform:translateY(-3px);
+}
+
+.contact{
+padding:100px 10%;
+background:linear-gradient(135deg,#0f1b3d,#081229);
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:40px;
+color:white;
+}
+
+#contact-form{
+max-width:600px;
+margin:0 auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+background:#ffffff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.25);
+}
+
+#contact-form input,
+#contact-form textarea{
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:15px;
+width:100%;
+}
+
+#contact-form textarea{
+min-height:130px;
+resize:none;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+box-shadow: 0 0 0 2px #38bdf8;
+}
+
+#contact-form textarea {
+min-height: 140px;
+resize: none;
+}
+
+#contact-form button{
+background:#3b6efc;
+color:white;
+border:none;
+padding:20px;
+border-radius:20px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+#contact-form button:hover{
+background:#6088f7;
+}
+
+#form-message{
+margin-top:10px;
+color:green;
+font-weight:600;
+}
+
