@@ -283,6 +283,56 @@ padding:80px 10%;
 text-align:center;
 }
 
+.event-page{
+  padding:60px 20px;
+  color:white;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* 🔥 BAŞLIK */
+.event-title{
+  font-size:42px;
+  margin-bottom:30px;
+  text-align:left;
+}
+
+/* 🔥 AFİŞ */
+.event-banner{
+  width:100%;
+  max-height:600px;
+  object-fit:contain;
+  border-radius:15px;
+  margin-bottom:30px;
+}
+
+/* 🔥 YAZILAR */
+.event-details{
+  text-align:left;
+}
+
+.event-details p{
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:18px;
+}
+
+/* 🔥 BUTON */
+.event-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#2a38bb;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.event-btn:hover{
+  background:#6388ee;
+}
+
 .events h2{
 font-size:50px;
 margin-bottom:40px;
