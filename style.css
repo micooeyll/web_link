@@ -185,6 +185,60 @@ color:white;
 font-weight:600;
 cursor:pointer;
 }
+.social-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-section p {
+    color: #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Brand colors */
+.instagram {
+    background: #E1306C;
+}
+
+.linkedin {
+    background: #0077B5;
+}
+
+.teams {
+    background: #6264A7;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.icon:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
 
 button:hover{
 background:#ff7f50;
