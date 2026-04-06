@@ -339,12 +339,12 @@ text-align:center;
 
 .event-page{
   padding:60px 20px;
-  color:white;
+  color:rgb(255, 255, 255);
   max-width:1000px;
   margin:auto;
 }
 
-/* 🔥 BAŞLIK */
+/* EVENT1 */
 .event-title{
   font-size:42px;
   margin-bottom:30px;
@@ -358,6 +358,9 @@ text-align:center;
   object-fit:contain;
   border-radius:15px;
   margin-bottom:30px;
+
+
+  
 }
 
 /* 🔥 YAZILAR */
@@ -384,7 +387,7 @@ text-align:center;
 }
 
 .event-btn:hover{
-  background:#6388ee;
+  background:#4d6ab9;
 }
 
 .events h2{
@@ -393,67 +396,60 @@ margin-bottom:40px;
 }
 
 .event-card{
-background:#f3f4f6;
+background:#f0dfdf;
 padding:40px;
 border-radius:20px;
 max-width:800px;
 margin:40px auto;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+box-shadow:0 10px 30px rgba(255, 255, 255, 0.2);
 }
 
 .event-card h3{
-font-size:28px;
-margin-bottom:15px;
-color:#213f69;
+  font-size:34px;
+  font-weight:700;
+  margin-bottom:20px;
+  color:#0f172a;
 }
 
 .event-card p{
-color:#1f2937;
-font-size:16px;
+  color:#a0a0a0;
+  font-size:17px;
 }
 
-.join{
-display:flex;
-flex-direction:column;
-align-items:center;
+/* event1 feedback start */
+#feedback{
+  padding:50px 20px;
+  text-align:center;
 }
 
-.join h2{
-font-size:40px;
-margin-bottom:20px;
+#feedback form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
 }
 
-.join p{
-max-width:700px;
-margin:auto;
-font-size:18px;
-line-height:1.6;
-color:#d8d3d3;
+#feedback input,
+#feedback textarea{
+  padding:12px;
+  border-radius:8px;
+  border:none;
 }
 
-.join-buttons{
-margin-top:40px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+#feedback button{
+  padding:12px;
+  background:#00bfff;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
 }
 
-.join-btn{
-padding:15px 40px;
-font-size:18px;
-background:#ffc83d;
-border:none;
-border-radius:10px;
-cursor:pointer;
-transition:0.3s;
+#feedback button:hover{
+  background:#009acd;
 }
-
-.join-btn:hover{
-background:#ffb700;
-transform:translateY(-3px);
-}
-
+/* event1 feedback end */
 .discord-btn{
 padding:15px 40px;
 font-size:18px;
@@ -547,3 +543,131 @@ color:green;
 font-weight:600;
 }
 
+/* event2 start */
+.event-card{
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.event-card:hover{
+  transform:scale(1.05);
+}
+
+/* BUTTON */
+.event-link{
+  display:inline-block;
+  margin-top:5px;
+  padding:10px 10px;
+  background:#55557e;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+/* 🔥 HOVER'DA YAZI DEĞİŞTİR */
+.event-card:hover .event-link{
+  background:#28a745;
+}
+
+.event-card:hover .event-link::after{
+  content:"Join";
+}
+
+.event-link::after{
+  content:"View Details";
+}
+
+.instagram-link{
+  display:inline-block;
+  margin-top:10px;
+  font-size:16px;
+  color:#f09cf0; /* Instagram rengi */
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.instagram-link:hover{
+  color:#ffffff;
+  transform:scale(1.05);
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:10px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+/* JAM */
+.primary{
+  background:#2a38bb;
+  color:white;
+}
+
+.primary:hover{
+  background:#4d6ab9;
+  transform:scale(1.05);
+}
+
+/* DISCORD */
+.discord{
+  background:#5865F2;
+  color:white;
+}
+
+.discord:hover{
+  background:#4752C4;
+  transform:scale(1.05);
+}
+
+.btn{
+  line-height:1;
+}
+
+.gddjam-buttons{
+  display:flex;
+  justify-content:center; /* 🔥 ORTALAR */
+  gap:20px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.instagram-section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center; /* 🔥 kritik */
+  gap:15px;
+  margin:40px auto;
+}
+
+.goodluck-text{
+  max-width:700px; /* 🔥 taşmayı engeller */
+}
+
+.icon.instagram{
+  width:60px;
+  height:60px;
+  background:#E1306C;
+  border-radius:50%;
+
+  display:flex;               /* 🔥 önemli */
+  align-items:center;         /* 🔥 dikey ortala */
+  justify-content:center;     /* 🔥 yatay ortala */
+
+  margin:0 auto;
+  text-decoration:none;
+}
+
+.icon.instagram i{
+  font-size:30px;
+  color:white;
+  line-height:1;              /* 🔥 kritik */
+}
