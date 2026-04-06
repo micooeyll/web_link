@@ -203,21 +203,21 @@ cursor:pointer;
 }
 
 .icon {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     transition: 0.3s;
 }
 
-.icon:hover {
+/*.icon:hover {
     transform: scale(1.1);
 }
-
+*/
 /* Brand colors */
 .instagram {
     background: #E1306C;
@@ -652,22 +652,24 @@ font-weight:600;
   max-width:700px; /* 🔥 taşmayı engeller */
 }
 
-.icon.instagram{
+/*.icon.instagram{
   width:60px;
   height:60px;
   background:#E1306C;
   border-radius:50%;
 
-  display:flex;               /* 🔥 önemli */
-  align-items:center;         /* 🔥 dikey ortala */
-  justify-content:center;     /* 🔥 yatay ortala */
+  display:flex;                🔥 önemli 
+  align-items:center;          🔥 dikey ortala
+  justify-content:center;      🔥 yatay ortala 
 
   margin:0 auto;
   text-decoration:none;
 }
+*/
 
-.icon.instagram i{
+/*.icon.instagram i{
   font-size:30px;
   color:white;
-  line-height:1;              /* 🔥 kritik */
+  line-height:1;               🔥 kritik 
 }
+*/
