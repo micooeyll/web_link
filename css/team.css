@@ -1,0 +1,259 @@
+
+/* =========================================
+   1. HERO & JOIN SECTIONS (style.css)
+========================================= */
+
+.accent-text {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text; /* standard property for broader compatibility */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* fallback using standard property */
+}
+
+.hero-subheadline {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.join {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: rgba(30, 41, 59, 0.3);
+}
+
+.join h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.join p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.join-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.join-btn, .btn-secondary {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: var(--transition);
+    border: none;
+}
+
+.join-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.join-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--text-muted);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* =========================================
+   4. TEAM SECTION (team.css)
+========================================= */
+#team {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alt satıra düşen o 3 kişiyi kusursuzca ortalayacak sihirli kod */
+    gap: 30px;
+    max-width: 1250px; /* 4 kişinin yan yana rahat sığması için biraz genişlettik */
+    margin: 0 auto;
+}
+
+.member {
+    /* 4 kişinin yan yana sığması için genişlik hesabı */
+    flex: 1 1 260px; /* İdeal genişlik 260px */
+    max-width: 250px; /* Geniş ekranlarda çok fazla uzayıp devasa olmalarını engeller */
+    
+    /* Geri kalan eski tasarım kodların aynı kalıyor: */
+    background:#fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: var(--transition);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.member:hover{
+transform:translateY(-10px);
+transition:.3s;
+}
+
+.member img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.member h3{
+margin-top:15px;
+color:#213f69;
+}
+
+.member p{
+color:gray;
+}
+
+.socials{
+margin-top:10px;
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+.socials a{
+font-size:22px;
+color:#333;
+transition:.3s;
+}
+
+.socials a:hover{
+color:#0077b5;
+transform:scale(1.2);
+}
+
+/* ==========================================================================
+   JOIN ACM SECTION (Harekete Geçirici Mesaj Alanı)
+   ========================================================================== */
+
+.join {
+    padding: 100px 20px;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(30, 41, 59, 0.3) 0%, transparent 70%); /* Hafif derinlik efekti */
+    position: relative;
+}
+
+.join h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.join p {
+    font-size: 18px;
+    color: #94a3b8; /* Okunabilir, gözü yormayan hafif mat beyaz/gri */
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* Butonları Yan Yana Hizalama */
+.join-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Mobil ekranlarda butonların alt alta düzgünce inmesi için */
+}
+
+/* Linklerin alt çizgisini kaldırma */
+.join-buttons a {
+    text-decoration: none;
+}
+
+/* 1. ANA BUTON: Apply Now (Dinamik Mavi/Modern Buton) */
+.join-btn {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); /* Premium mavi gradyan */
+    color: #ffffff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+    transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+    transform: translateY(-2px); /* Yukarı hafif zıplama efekti */
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); /* Parlama efekti */
+}
+
+/* 2. İKİNCİ BUTON: Partner With Us (Şeffaf / Outline Tasarım) */
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Çok sert olmayan beyaz çerçeve */
+    padding: 12px 30px; /* Sınır çizgisinden dolayı yüksekliği eşitlemek için ayarlandı */
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn-secondary:hover {
+    border-color: #ffffff; /* Üzerine gelince çerçeve parlar */
+    background-color: rgba(255, 255, 255, 0.05); /* İçine çok hafif bir beyazlık çöker */
+    transform: translateY(-2px);
+}
+
+/* Butonlara basılma hissi */
+.join-btn:active, .btn-secondary:active {
+    transform: translateY(1px);
+}
+
+/* =========================================
+   6. RESPONSIVE DESIGN (responsive.css)
+========================================= */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .join-buttons {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
+

@@ -1,0 +1,125 @@
+
+
+/* ==========================================================================
+   4. PROJELER SAYFASI (Our Projects)
+   ========================================================================== */
+.interactive-project-container {
+    background-color: var(--card-dark);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(15, 9, 71, 0.685);
+}
+
+.interactive-project-container:hover {
+    box-shadow: 0 15px 40px rgba(221, 217, 255, 0.432);
+    transform: translateY(-3px);
+    transition: .3s;
+}
+
+.game-frame-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.project-demo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.project-centered-title h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 12px;
+}
+
+.project-info-split-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.project-left-column {
+    flex: 1.2;
+}
+
+.project-description-text {
+    color: #cbd5e1;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.project-right-column {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-tech-stack h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: rgba(77, 91, 247, 0.1);
+    color: linear-gradient(90deg, #7c88ff, #4d5bf7);
+    color: #7c88ff;
+    border: 1px solid rgba(77, 91, 247, 0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.project-meta-row p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* 📌 Projeler Sayfası Modern Butonları */
+.project-action-link {
+    display: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    color: #4d5bf7;
+}
+
+.project-action-link a {
+    display: inline-block;
+    padding: 14px 28px;
+
+    background: #2739fc;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px;
+
+    transition: .3s;
+
+    box-shadow:
+        0 8px 20px rgba(77,91,247,.35);
+}
+
+.project-action-link a:hover {
+    transform: translateY(-3px);
+
+    background:#2e3ed1;
+}
+.project-action-link a:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(77, 91, 247, 0.15);
+}
+

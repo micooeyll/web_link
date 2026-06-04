@@ -1,0 +1,39 @@
+/* ==========================================================================
+   8. FOOTER (Sayfa Alt Bilgisi)
+   ========================================================================== */
+
+.footer-socials{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:20px;
+}
+
+/* 📌 KESİN EN ALTTA TUTMA EMİRİ (`image_d9621c.jpg` ve `image_d8e25b.jpg` Düzeltmesi) */
+footer, .footer, #footer {
+    margin-top: auto; /* Sayfa içi kısa olsa bile kendini en alta kilitler */
+    width: 100%;
+    background-color: #070a12;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.footer-socials a:hover {
+    transform: scale(1.15);
+}
+footer p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-socials a i {
+    font-size: 30px !important;
+}
+
+.footer-socials a {
+    width: auto !important;
+    height: auto !important;
+}

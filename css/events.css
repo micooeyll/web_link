@@ -1,0 +1,124 @@
+.events{
+padding:80px 6%;
+text-align:center;
+}
+
+.events h2{
+font-size:50px;
+margin-bottom:40px;
+}
+
+.event-card{
+background:#c2d3ff;
+padding:40px;
+border-radius:20px;
+max-width:800px;
+margin:40px auto;
+box-shadow:0 10px 30px rgba(255,255,255,.2);
+text-align:center;
+transition:.3s;
+}
+
+.event-card:hover{
+transform:scale(1.05);
+}
+
+.event-card h3{
+font-size:34px;
+font-weight:700;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+.event-card h1{
+font-size:25px;
+font-weight:700;
+margin-bottom:20px;
+color:#1f4191;
+}
+
+
+.event-card p{
+color:#d4d0d0;
+font-size:16px;
+}
+
+.event-link{
+display:inline-block;
+margin-top:5px;
+padding:10px 10px;
+background:#55557e;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.event-link::after{
+content:"View Details";
+}
+
+.event-card:hover .event-link{
+background:#a0ffb6;
+}
+
+.event-card:hover .event-link::after{
+content:"Join";
+}
+
+.btn{
+line-height:1;
+}
+
+/* --- Geçmiş Etkinlikler Buton Tasarımı --- */
+.event-btn {
+    display: inline-block;
+    background-color: #4d5bf7; /* Sitenin canlı mavi/mor tonu */
+    color: #ffffff !important; /* Yazı rengini beyaz yapar */
+    text-decoration: none;     /* Alttaki düz çizgiyi kaldırır */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 26px;        /* Butonun et kalınlığı ve genişliği */
+    border-radius: 6px;        /* Köşeleri şık bir şekilde yuvarlatır */
+    margin-top: 15px;          /* Üstteki h3 başlığı ile butonun arasını açar */
+    transition: all 0.3s ease; /* Hover efektinin yumuşak geçişi için */
+    box-shadow: 0 4px 6px rgba(77, 91, 247, 0.15); /* Hafif modern bir gölge */
+}
+
+/* Fareyle üzerine gelindiğinde (Hover) */
+.event-btn:hover {
+    background-color: #737dec; /* Arka planı tatlı bir şekilde koyulaştırır */
+    transform: translateY(-2px); /* Butonu hafifçe yukarı esnetir */
+    box-shadow: 0 6px 12px rgba(77, 91, 247, 0.3); /* Gölgeyi belirginleştirir */
+}
+
+/* Butona tıklandığı an (Active) */
+.event-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(77, 91, 247, 0.15);
+
+}
+
+.badge{
+    display:inline-block;
+    font: 28px;
+    text-transform:uppercase;
+    font-weight:800;
+    color:#ffffff;
+}
+
+#bak-container{
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    z-index: 9999;
+}
+
+#bak-img{
+    max-width: 120px;
+    max-height: 120px;
+    width: 120px;
+    height: auto;
+}
